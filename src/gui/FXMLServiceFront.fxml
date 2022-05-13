@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="StckFrontProduit" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="726.0" prefWidth="1123.0" styleClass="Applicationlkol" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.FrontSERVController">
+   <children>
+      <BorderPane fx:id="bp" prefHeight="200.0" prefWidth="200.0">
+         <center>
+            <AnchorPane prefHeight="726.0" prefWidth="942.0" style="-fx-background-color: white;" styleClass="Applicationlkol" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane prefHeight="727.0" prefWidth="96.0" style="-fx-background-color: linear-gradient(to right top, #039BE5 , #4DD0E1); -fx-background-radius: 30px 0px 0px 30px;">
+                     <children>
+                        <ImageView fitHeight="71.0" fitWidth="70.0" layoutX="13.0" layoutY="76.0" onMouseClicked="#GoToFournisseur" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/producticon.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="71.0" fitWidth="70.0" layoutX="13.0" layoutY="208.0" onMouseClicked="#ghne" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/song.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="22.0" layoutY="146.0" text="Services" textFill="WHITE" />
+                        <Label layoutX="31.0" layoutY="286.0" text="Song" textFill="WHITE" />
+                        <Label alignment="CENTER" layoutX="27.0" layoutY="680.0" text="Home" textFill="WHITE" />
+                        <ImageView fitHeight="73.0" fitWidth="73.0" layoutX="12.0" layoutY="607.0" onMouseClicked="#HOME" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/home1.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="20.0" layoutY="399.0" text="Youtube" textFill="WHITE" />
+                        <ImageView fitHeight="73.0" fitWidth="82.0" layoutX="7.0" layoutY="326.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/youtube2.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Label layoutX="502.0" layoutY="14.0" text="Services" textFill="#bfbbd0">
+                     <font>
+                        <Font name="System Bold" size="31.0" />
+                     </font>
+                  </Label>
+                  <Pane fx:id="PaneBlur" layoutX="93.0" prefHeight="727.0" prefWidth="1034.0" style="-fx-background-color: white; -fx-opacity: 0.8;" visible="false" />
+                  <ImageView fitHeight="40.0" fitWidth="33.0" layoutX="1076.0" layoutY="14.0" onMouseClicked="#CloseWindowClicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/close_window.png" />
+                     </image>
+                  </ImageView>
+                  <ScrollPane fx:id="scrollPane" layoutX="119.0" layoutY="220.0" prefHeight="485.0" prefWidth="973.0" style="-fx-background-color: linear-gradient(to right top, #039BE5 , #4DD0E1);" />
+                  <MediaView fx:id="mediaView" fitHeight="200.0" fitWidth="300.0" layoutX="758.0" layoutY="14.0" />
+                  <Button fx:id="btnPlay" layoutX="716.0" layoutY="45.0" mnemonicParsing="false" onAction="#playAct">
+                     <graphic>
+                        <ImageView fitHeight="19.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/orageplay.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnPause" layoutX="717.0" layoutY="94.0" mnemonicParsing="false" onAction="#pauseAct">
+                     <graphic>
+                        <ImageView fitHeight="17.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/orangepause.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnReset" layoutX="715.0" layoutY="138.0" mnemonicParsing="false" onAction="#resetAct">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/reset.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label layoutX="721.0" layoutY="14.0" text="PUB" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>

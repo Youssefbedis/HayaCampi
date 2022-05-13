@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="520.0" prefWidth="512.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SignUpController">
+   <children>
+      <VBox prefHeight="529.0" prefWidth="512.0" style="-fx-background-color: linear-gradient(to right top, #039BE5 , #4DD0E1)ite;" stylesheets="@styles.css">
+         <children>
+            <HBox prefHeight="36.0" prefWidth="512.0" />
+            <HBox prefHeight="72.0" prefWidth="512.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="59.0" prefWidth="512.0" text="Créer Compte" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="38.0" prefWidth="512.0">
+               <children>
+                  <TextField fx:id="TFemail" alignment="CENTER" prefHeight="26.0" prefWidth="515.0" promptText="Email">
+                     <effect>
+                        <ColorAdjust brightness="-0.01" />
+                     </effect></TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="35.0" prefWidth="512.0">
+               <children>
+                  <PasswordField fx:id="TFmotdepasse" alignment="CENTER" prefHeight="26.0" prefWidth="521.0" promptText="Mot de passe">
+                     <effect>
+                        <ColorAdjust contrast="-0.03" />
+                     </effect></PasswordField>
+               </children>
+            </HBox>
+            <HBox prefHeight="40.0" prefWidth="512.0">
+               <children>
+                  <TextField fx:id="TFlFirstName" alignment="CENTER" prefHeight="20.0" prefWidth="512.0" promptText="Prénom">
+                     <effect>
+                        <ColorAdjust />
+                     </effect></TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="41.0" prefWidth="512.0">
+               <children>
+                  <TextField fx:id="TFLastName" alignment="CENTER" prefHeight="26.0" prefWidth="514.0" promptText="Nom">
+                     <effect>
+                        <ColorAdjust brightness="0.02" contrast="0.07" />
+                     </effect></TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="43.0" prefWidth="512.0">
+               <children>
+                  <TextField fx:id="TFCIN" alignment="CENTER" prefHeight="26.0" prefWidth="520.0" promptText="CIN">
+                     <effect>
+                        <ColorAdjust />
+                     </effect></TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="38.0" prefWidth="512.0">
+               <children>
+                  <TextField fx:id="TFNumTelephone" alignment="CENTER" prefHeight="26.0" prefWidth="519.0" promptText="Numéro de Téléphone">
+                     <effect>
+                        <ColorAdjust brightness="0.1" contrast="0.02" />
+                     </effect></TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="47.0" prefWidth="512.0">
+               <children>
+                  <TextField fx:id="TFAdresse" alignment="CENTER" prefHeight="26.0" prefWidth="531.0" promptText="Adresse">
+                     <effect>
+                        <ColorAdjust brightness="0.02" />
+                     </effect></TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="41.0" prefWidth="512.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#AjouterCompte" prefHeight="47.0" prefWidth="447.0" text="Enregistrer vous">
+                     <HBox.margin>
+                        <Insets left="50.0" right="50.0" />
+                     </HBox.margin>
+                  </Button>
+               </children></HBox>
+            <HBox prefHeight="83.0" prefWidth="512.0">
+               <children>
+                  <Button graphicTextGap="1.0" mnemonicParsing="false" onAction="#precedent" prefHeight="44.0" prefWidth="447.0" text="Précedent">
+                     <HBox.margin>
+                        <Insets left="50.0" right="50.0" top="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

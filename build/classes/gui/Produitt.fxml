@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="477.0" prefWidth="798.0" style="-fx-background-color: yellow;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ProduittController">
+   <children>
+      <Button id="ajt" fx:id="ajt" layoutX="349.0" layoutY="378.0" mnemonicParsing="false" onAction="#ajouter" text="ajouter" />
+      <Button fx:id="supp" layoutX="70.0" layoutY="410.0" mnemonicParsing="false" onAction="#supprimer" text="supprimer" />
+      <Button fx:id="mod" layoutX="655.0" layoutY="419.0" mnemonicParsing="false" onAction="#modifier" text="modifier" />
+      <TextField id="nom" fx:id="nom" layoutX="114.0" layoutY="90.0" promptText="nom" />
+      <TextField id="desc" fx:id="desc" layoutX="114.0" layoutY="144.0" promptText="desc" />
+      <TextField id="etat" fx:id="etat" layoutX="114.0" layoutY="215.0" promptText="etat" />
+      <TextField id="img" fx:id="img" layoutX="114.0" layoutY="278.0" promptText="img" />
+      <TextField id="id" fx:id="id" layoutX="114.0" layoutY="30.0" promptText="id" />
+      <Label layoutX="35.0" layoutY="35.0" text="id" />
+      <Label layoutX="35.0" layoutY="95.0" text="nom" />
+      <Label layoutX="35.0" layoutY="149.0" text="desc" />
+      <Label layoutX="35.0" layoutY="220.0" text="etat" />
+      <Label layoutX="35.0" layoutY="283.0" text="image" />
+      <Label layoutX="33.0" layoutY="352.0" text="cat" />
+      <TextField id="cat" fx:id="cat" layoutX="114.0" layoutY="347.0" promptText="cat" />
+      <Label fx:id="listP" layoutX="321.0" layoutY="67.0" prefHeight="295.0" prefWidth="469.0" wrapText="true" />
+      <Button fx:id="pdfm" layoutX="361.0" layoutY="435.0" mnemonicParsing="false" onAction="#pdfm" text="pdf" />
+      <Button fx:id="btnTrier" layoutX="322.0" layoutY="15.0" mnemonicParsing="false" onAction="#affichrtTri" prefHeight="31.0" prefWidth="67.0" text="Trier" />
+      <TextField fx:id="rec" layoutX="586.0" layoutY="15.0" onKeyTyped="#rec" />
+      <ComboBox fx:id="choisir" layoutX="416.0" layoutY="15.0" prefWidth="150.0" promptText="Rechercher" />
+      <Button fx:id="afficher" layoutX="554.0" layoutY="373.0" mnemonicParsing="false" onAction="#afficher" text="Afficher" />
+   </children>
+   <effect>
+      <SepiaTone />
+   </effect>
+</AnchorPane>

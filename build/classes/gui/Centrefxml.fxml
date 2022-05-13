@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="582.0" prefWidth="769.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.CentrefxmlController">
+   <children>
+      <Label layoutX="46.0" layoutY="87.0" text="Nom Centre" textFill="#110000">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="45.0" layoutY="113.0" text="Num">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="46.0" layoutY="136.0" text="Rue">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="44.0" layoutY="167.0" text="Ville">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="44.0" layoutY="198.0" text="Mail">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="34.0" layoutY="229.0" text="Description">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="49.0" layoutY="296.0" text="Prix">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="40.0" layoutY="264.0" text="image">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <TextField fx:id="TFnom" layoutX="169.0" layoutY="83.0" />
+      <TextField fx:id="TFnum" layoutX="169.0" layoutY="109.0" />
+      <TextField fx:id="TFrue" layoutX="169.0" layoutY="134.0" />
+      <TextField fx:id="TFville" layoutX="169.0" layoutY="167.0" />
+      <TextField fx:id="TFmail" layoutX="169.0" layoutY="196.0" />
+      <TextField fx:id="TFdescription" layoutX="169.0" layoutY="229.0" />
+      <TextField fx:id="TFprix" layoutX="169.0" layoutY="296.0" />
+      <Button layoutX="281.0" layoutY="351.0" mnemonicParsing="false" onAction="#ajoutercentre" text="ajouter" />
+      <Button layoutX="383.0" layoutY="350.0" mnemonicParsing="false" onAction="#affichercentres" text="afficher" />
+      <Label layoutX="178.0" layoutY="21.0" prefHeight="33.0" prefWidth="244.0" text="     gestion des centre" textFill="#dbe0e0" />
+      <TextField fx:id="TFchercher" layoutX="348.0" layoutY="54.0" />
+      <Button layoutX="521.0" layoutY="54.0" mnemonicParsing="false" onAction="#cherchercentre" text="chercher" />
+      <Button layoutX="493.0" layoutY="350.0" mnemonicParsing="false" onAction="#tricentres" prefHeight="25.0" prefWidth="49.0" text="tri" />
+      <ListView fx:id="listView" layoutX="335.0" layoutY="93.0" onMouseClicked="#sendtoedit" prefHeight="234.0" prefWidth="388.0" />
+      <Button fx:id="modifierbtn" layoutX="125.0" layoutY="351.0" mnemonicParsing="false" onAction="#modifier" stylesheets="@style.css" text="edit" />
+      <Button layoutX="624.0" layoutY="350.0" mnemonicParsing="false" onAction="#pdff" text="PDF" />
+      <Button layoutX="31.0" layoutY="351.0" mnemonicParsing="false" onAction="#suprimercentre" text="suprimer" />
+      <Button fx:id="btimg" layoutX="236.0" layoutY="264.0" mnemonicParsing="false" onAction="#ImportImage" text="ajouter image" />
+      <ImageView fx:id="ImageIV" fitHeight="150.0" fitWidth="200.0" layoutX="78.0" layoutY="376.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../FARES/img/Images/mod.jpg" />
+         </image></ImageView>
+      <Text fx:id="imagepath" layoutX="91.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="156.99998492002487" />
+      <Button fx:id="homho" layoutX="39.0" layoutY="29.0" mnemonicParsing="false" onAction="#homiee">
+         <graphic>
+            <ImageView fitHeight="34.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/home-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+   <effect>
+      <SepiaTone />
+   </effect>
+</AnchorPane>

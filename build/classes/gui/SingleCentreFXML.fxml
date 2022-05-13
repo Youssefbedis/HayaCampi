@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="StckFrontProduit" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="726.0" prefWidth="1123.0" styleClass="Applicationlkol" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.SingleCentreFXMLController">
+   <children>
+      <AnchorPane prefHeight="726.0" prefWidth="942.0" style="-fx-background-color: white;" styleClass="Applicationlkol">
+         <children>
+            <Pane prefHeight="727.0" prefWidth="96.0" style="-fx-background-color: linear-gradient(to right top, #039BE5 , #4DD0E1); -fx-background-radius: 30px 0px 0px 30px;" />
+            <Label layoutX="502.0" layoutY="14.0" prefHeight="63.0" prefWidth="201.0" text="Centers" textFill="#bfbbd0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
+            <Pane fx:id="PaneBlur" layoutX="93.0" prefHeight="727.0" prefWidth="1034.0" style="-fx-background-color: white; -fx-opacity: 0.8;" visible="false" />
+            <ScrollPane fx:id="scrollPane" layoutX="119.0" layoutY="102.0" prefHeight="645.0" prefWidth="975.0" style="-fx-background-color: linear-gradient(to right top, #039BE5 , #4DD0E1);">
+               <content>
+                  <Pane prefHeight="654.0" prefWidth="1006.0">
+                     <children>
+                        <VBox layoutX="200.0" prefHeight="645.0" prefWidth="582.0">
+                           <children>
+                              <Text fx:id="nomcen" fill="#00196b" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="527.13671875">
+                                 <font>
+                                    <Font size="36.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fx:id="imgv" fitHeight="317.0" fitWidth="603.0" pickOnBounds="true" preserveRatio="true" />
+                              <Text fx:id="txtrue" strokeType="OUTSIDE" strokeWidth="0.0" text="Rue :" wrappingWidth="398.13671875">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="ville" strokeType="OUTSIDE" strokeWidth="0.0" text="ville :" wrappingWidth="45.13671875">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="txtdescrition" strokeType="OUTSIDE" strokeWidth="0.0" text="Description :" wrappingWidth="742.13671875">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="mailtxt" strokeType="OUTSIDE" strokeWidth="0.0" text="mail:" wrappingWidth="118.13671875">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="prixtxt" strokeType="OUTSIDE" strokeWidth="0.0" text="prix:" wrappingWidth="517.666015625">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+               </content></ScrollPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="520.0" prefWidth="512.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <VBox prefHeight="529.0" prefWidth="512.0" style="-fx-background-color: linear-gradient(to right top, #039BE5 , #4DD0E1)ite;" stylesheets="@styles.css">
+         <children>
+            <HBox prefHeight="36.0" prefWidth="512.0" />
+            <HBox prefHeight="72.0" prefWidth="512.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="59.0" prefWidth="512.0" text="HayaCampi" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="40.0" prefWidth="512.0">
+               <children>
+                  <HBox prefHeight="38.0" prefWidth="512.0">
+                     <children>
+                        <TextField fx:id="TFemail" alignment="CENTER" prefHeight="26.0" prefWidth="515.0" promptText="Email" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="41.0" prefWidth="512.0">
+               <children>
+                  <HBox prefHeight="35.0" prefWidth="512.0">
+                     <children>
+                        <PasswordField fx:id="TFmotdepasse" alignment="CENTER" prefHeight="25.0" prefWidth="517.0" promptText="Mot de passe" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="43.0" prefWidth="512.0" />
+            <HBox prefHeight="38.0" prefWidth="512.0" />
+            <HBox prefHeight="47.0" prefWidth="512.0" />
+            <HBox prefHeight="41.0" prefWidth="512.0" />
+            <HBox prefHeight="103.0" prefWidth="512.0">
+               <children>
+                  <Button fx:id="Login" mnemonicParsing="false" onAction="#Login1" prefHeight="49.0" prefWidth="182.0" text="Se connecter">
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#Register" prefHeight="50.0" prefWidth="183.0" text="Enregistrer_vous">
+                     <HBox.margin>
+                        <Insets left="100.0" right="50.0" />
+                     </HBox.margin>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

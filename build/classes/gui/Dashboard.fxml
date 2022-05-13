@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.DashboardController">
+   <children>
+      <ImageView fx:id="Logo" fitHeight="239.0" fitWidth="231.0" layoutX="669.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/Photo_1643819245752.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="MenuLabel" layoutX="378.0" layoutY="21.0" prefHeight="55.0" prefWidth="144.0" text="Menu" textFill="#d7780b">
+         <font>
+            <Font name="Cooper Black" size="48.0" />
+         </font>
+      </Label>
+      <Button layoutX="326.0" layoutY="217.0" mnemonicParsing="false" onAction="#BtnLivreur" prefHeight="26.0" prefWidth="248.0" text="Gestion des Livreurs">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button layoutX="326.0" layoutY="268.0" mnemonicParsing="false" onAction="#BtnLivraison" prefHeight="26.0" prefWidth="248.0" text="Gestion des Livraisons">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button layoutX="326.0" layoutY="312.0" mnemonicParsing="false" onAction="#BtnMap" prefHeight="26.0" prefWidth="248.0" text="Localisation des Livreurs">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button layoutX="326.0" layoutY="120.0" mnemonicParsing="false" onAction="#BtnListUser" prefHeight="26.0" prefWidth="248.0" text="Gestion des Utilisateur">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button layoutX="326.0" layoutY="167.0" mnemonicParsing="false" onAction="#BtnReservation" prefHeight="26.0" prefWidth="248.0" text="Gestion des Réservation">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button layoutX="42.0" layoutY="613.0" mnemonicParsing="false" onAction="#BtnHome" prefHeight="26.0" prefWidth="165.0" text="Home">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button layoutX="42.0" layoutY="652.0" mnemonicParsing="false" onAction="#Btndeconnection" prefHeight="26.0" prefWidth="165.0" text="Déconnection">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button layoutX="326.0" layoutY="350.0" mnemonicParsing="false" onAction="#BtnListCommande" prefHeight="26.0" prefWidth="248.0" text="Liste Commande">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button layoutX="326.0" layoutY="388.0" mnemonicParsing="false" onAction="#BtnListService" prefHeight="26.0" prefWidth="248.0" text="Gestion Des Services">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button layoutX="326.0" layoutY="430.0" mnemonicParsing="false" onAction="#BtnListProduit" prefHeight="26.0" prefWidth="248.0" text="Gestion Des Produits">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button layoutX="326.0" layoutY="472.0" mnemonicParsing="false" onAction="#BtnPromotion" prefHeight="26.0" prefWidth="248.0" text="Gestion Promotion">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button layoutX="326.0" layoutY="512.0" mnemonicParsing="false" onAction="#BtnCentre" prefHeight="26.0" prefWidth="248.0" text="Gestion Centre">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button layoutX="326.0" layoutY="550.0" mnemonicParsing="false" onAction="#BtnLivreur" prefHeight="26.0" prefWidth="248.0" text="Gestion Livreur">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button layoutX="326.0" layoutY="588.0" mnemonicParsing="false" onAction="#BtnLivraison" prefHeight="26.0" prefWidth="248.0" text="Gestion Livraison">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button layoutX="326.0" layoutY="629.0" mnemonicParsing="false" onAction="#BtnMap" prefHeight="26.0" prefWidth="248.0" text="Map">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+   </children>
+   <effect>
+      <SepiaTone level="0.39" />
+   </effect>
+</AnchorPane>
