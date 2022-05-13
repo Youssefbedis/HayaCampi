@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="gui.HomeController">
+   <children>
+      <BorderPane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="1220.0">
+         <left>
+            <VBox prefHeight="700.0" prefWidth="350.0" spacing="60.0" styleClass="green-panel" stylesheets="@styles.css" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="178.0" prefWidth="342.0" spacing="15.0">
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label fx:id="lbNameM" text="HayaCampi" textFill="#e1dede">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Button mnemonicParsing="false" onAction="#Editprofil" prefHeight="25.0" prefWidth="103.0" styleClass="blue-btn" text="edite profil" textFill="#f2ebeb">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="294.0" prefWidth="270.0" spacing="15.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="45.0" prefWidth="200.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#profil" prefHeight="40.0" prefWidth="228.0" styleClass="blue-btn" text="Profile" textFill="#ededed">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="45.0" prefWidth="200.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#Reservation" prefHeight="40.0" prefWidth="229.0" styleClass="blue-btn" text="Réservation" textFill="#ededed">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="45.0" prefWidth="200.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#Store" prefHeight="40.0" prefWidth="226.0" styleClass="blue-btn" text="Store" textFill="#ededed">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="45.0" prefWidth="200.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#Commande" prefHeight="40.0" prefWidth="222.0" styleClass="blue-btn" text="Commande" textFill="#ededed">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="45.0" prefWidth="200.0" />
+                        <HBox alignment="CENTER" prefHeight="45.0" prefWidth="200.0" />
+                        <HBox alignment="CENTER" prefHeight="45.0" prefWidth="200.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#LOGOUT" prefHeight="40.0" prefWidth="223.0" styleClass="blue-btn" text="Log_out" textFill="#ededed">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" styleClass="green-panel" stylesheets="@styles.css" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox prefHeight="530.0" prefWidth="650.0" styleClass="green-panel" stylesheets="@styles.css">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="8.0" prefWidth="650.0" />
+                        <HBox alignment="CENTER_LEFT" prefHeight="8.0" prefWidth="650.0" />
+                        <HBox alignment="CENTER_LEFT" prefHeight="8.0" prefWidth="650.0" />
+                        <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="157.0" prefHeight="8.0" prefWidth="650.0" />
+                        <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="203.0" prefHeight="8.0" prefWidth="650.0" />
+                        <HBox prefHeight="46.0" prefWidth="650.0" />
+                        <HBox prefHeight="35.0" prefWidth="650.0">
+                           <VBox.margin>
+                              <Insets top="30.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="35.0" prefWidth="650.0">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="38.0" prefWidth="650.0">
+                           <VBox.margin>
+                              <Insets top="70.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
